@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 :root{
-    --principal-color:#BFCCB5;
     --color-carrito:#B7B7B7;
     --opacidad-contorno:rgb(203, 210, 203);
     --selector-opacidad-img:rgba(55, 18, 18, 0.8);
@@ -12,15 +11,99 @@
     --letras-boton:#ffffff;
     --text-color-white:#ffffffe3;
     --dark-button:#070A52;
-
+}
+/* header */
+header {
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Añadido para posicionar el logo */
+}
+#darkModeToggle{
+    background-color: #f8f8f8;
+    position: relative;
+    box-shadow: inset 1px 1px 2px #cecece,
+                inset -1px -1px 2px #fff;
+    cursor: pointer;
+}
+.toggle{
+    position: absolute;
+    transform: scale(.7);
+    background-color:linear-gradient(145 deg, #d8d8d8,#ffffff);
+    border-radius: 25px;
+    box-shadow: 3px 3px8px;
+}
+#logo {
+    max-width: 100px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header {
+    padding: 10px;
+    text-align: center;
+    text-align: justify;
+}
+button {
+    /* background-color: #333; */
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+button:hover {
+    background-color: #555;
+}
 
+.dark-mode {
+    background-color: #333;
+    color: #fff
+}
+
+.dark-mode button {
+    background-color: #fff;
+    color: #333;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+.slider{
+    height: 100%;
+    max-width: 1000px;
+    height: 720px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.slider ul{
+    display: flex;
+    padding: 0px;
+    width: 400%;
+    animation: slider 20s infinite cubic-bezier(0.055, 0.48, 0.37, 0.92);
+}
+@keyframes slider {
+    0%{margin-left:0;}
+    20%{margin-left:0;}
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+    75%{margin-left:-300%;}
+    100%{margin-left:-300%;}
+    
+}
 body{
     max-width: 1200px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Cairo', sans-serif;
     margin:0 auto;
-    background-color:var(--principal-color);
+    background-color: #f8f8f8;
+    color: #333;
+    /* transition: background-color 0.5s, color 0.5s; */
 
 }
 .contenedor-icon-principal{
