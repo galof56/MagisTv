@@ -5,24 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="/assets/script.js" defer></script>
     <link rel="icon" href="./img/icono_principal_magis.ico">
     <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
     <title>Magis Tv</title>
 </head>
 <body>
     <header>
-        <img src="./img/magistv.png" alt="ICONO header" id="logoinicial">
-        <h1 class="header">MAGIS TV</h1>
-        <div class="toggle">
-            <button id="darkModeToggle"><box-icon name='moon' color='#ffffff' ></box-icon></button>
+        <div class="logoacasa">
+                <img src="./img/magistv.png" alt="ICONO header" id="logoinicial">
         </div>
-        <button class="whats"><span><box-icon type='logo' name='whatsapp'></box-icon></span></button>
+        <div class="dark">
+            <i class=' bx bx-moon ' id="toggleDark"></i>
+            
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="ref1"><a href="#home"></a></li>
+                <li class="ref2"><a href="#promo">promociones</a></li>
+                <li class="ref3"><a href="#video">videos</a></li>
+                <li class="ref4"><a href="">contactos</a></li>
+            </ul>
+        </nav>
         
     </header>
-
+</div>
+<div id="#home">
 
         <link rel="stylesheet" href="./assets/toggle.js">        
         
@@ -34,14 +45,10 @@
                 <li><img src="./img/slider/slider3.jpeg" alt=""></li>
                 <li><img src="./img/slider/siler4.jpg" alt=""></li>
             </ul>
-            
-            <div class="flechasCarrusel">
-                <i>I</i>
-                <i>D</i>
         </div>
     </div>
-
-<div id="hoddie">
+</div>
+<div id="promo">
         <div class="padre">
             <div class="contenedor-de-items">
                 <div class="item">
@@ -49,7 +56,7 @@
                         <img src="./img/promo1.jpg" alt="primera_hoodie_pink">
                     </figure>
                     <div class="info-producto">
-                        <h2>OFERTA </h2>
+                        <h2>OFERTA ESPECIAL </h2>
                         <p class="price">
                             3 meses a $23
                             <br>6+1 meses a $45 </br>
@@ -80,6 +87,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+            <div id="video">
+            <video width="640" height="360" controls>
+                <source src="https://www.youtube.com/watch?v=NRhzidIuArM" type="video/mp4">
+            </video>
+        </div>
+
             <!-- <div class="contenedor-de-items">
                 <div class="item">
                     <figure>
@@ -133,7 +147,5 @@
 <!-- <div class="padre2">
 
 </div> -->
-<script src="./assets/main.js"></script>
-
 </body>
 </html>

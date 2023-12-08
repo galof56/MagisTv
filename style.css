@@ -14,23 +14,65 @@
 }
 /* header */
 header {
-    padding: 10px;
+    padding: 5em;
+    display: flex;
     text-align: center;
+    justify-content: space-between;
     position: relative; /* Añadido para posicionar el logo */
 }
-#darkModeToggle{
-    background-color: #f8f8f8;
-    position: relative;
-    box-shadow: inset 1px 1px 2px #cecece,
-                inset -1px -1px 2px #fff;
+#logoinicial{
+    height: 100px;
+    width: 100px;
     cursor: pointer;
 }
-.toggle{
+.logoacasa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Añade margen cero para quitar el espacio predeterminado de la lista */
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Media query para hacer el menú responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Añade espacio vertical entre los elementos del menú en dispositivos móviles */
+        text-align: center;
+    }
+}
+i{
+    font-size: 25px;
     position: absolute;
-    transform: scale(.7);
-    background-color:linear-gradient(145 deg, #d8d8d8,#ffffff);
-    border-radius: 25px;
-    box-shadow: 3px 3px8px;
+    right: 50%;
+    transform: translate(-25%);
+}
+.dark{
+    cursor: pointer;
 }
 #logo {
     max-width: 100px; 
@@ -74,8 +116,9 @@ button:hover {
     place-content: center;
 }
 .slider{
-    height: 100%;
+    height: 100%;   
     max-width: 1000px;
+    min-width: 700px;
     height: 720px;
     overflow: hidden;
     border-radius: 10px;
@@ -98,7 +141,8 @@ button:hover {
     
 }
 body{
-    max-width: 1200px;
+    max-width: 1000px;
+    min-width: 500px;
     font-family: 'Cairo', sans-serif;
     margin:0 auto;
     background-color: #f8f8f8;
@@ -189,12 +233,7 @@ img{
 }
 /* header */
 
-header{
-    display: flex;
-    justify-content:space-between ;
-    padding: 30px 0px 30px 0px;
 
-}
 .img-principal-carrito{
     position: relative;
 }
