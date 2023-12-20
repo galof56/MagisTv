@@ -161,21 +161,6 @@ body{
 html{
     scroll-behavior: smooth;
 }
-/* .darkmode{
-
-    background-color:#000;
-    width: 5.1rem;
-    height: 1.8rem;
-    border-radius: 1.2rem;
-    outline:none ;
-    border: none;
-    cursor:pointer;
-    position: relative;
-    justify-content: space-between;
-    
-
-} */
-
 button.switch{
     position:absolute;
     width: 5rem;
@@ -211,6 +196,40 @@ button.switch:active:active::after{
     left: unset;
 }
 
+.tittle_promo h1{
+    padding: 2rem 1em 2em 3em;
+}
+.tittle_planes h1{
+    padding: 6rem 2em 2em 8em;
+    color: #3559E0;
+}
+.P_naranja h2{
+    background-color: #E3651D;
+    border-radius: 4px;
+    text-align: center;
+}
+.P_azul h2{
+    background-color: #277BC0;
+    border-radius: 4px;
+    text-align: center;
+}
+.P_rojo h2{
+    background-color: #D2001A;
+    border-radius: 4px;
+    text-align: center;
+}
+.P_verde h2{
+    background-color: #9ADE7B;
+    border-radius: 4px;
+    text-align: center;
+}
+.price span{
+    /* padding-left: 6em; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 
 
 
@@ -222,12 +241,7 @@ button.switch:active:active::after{
     width: 30px;
     height: 30px;
     background: none;
-
-    
-
 }
-
-
 img{
     max-width: 100%;
 }
@@ -265,21 +279,7 @@ img{
     justify-content: center;
     padding: 2rem;
 }
-/* .boton-deslizar{
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
-    padding-left: 8rem;
-}
-button.ver-mas{
-    max-height: auto;   
-    min-height: auto;
-    max-width: auto;
-    min-width: 320px;
-    display: flex;
-    border-radius: 1rem;
-} */
+
 ul{
     list-style: none;
     padding-top: 2rem;
@@ -351,14 +351,10 @@ li{
 .hidden-cart{
     display: none;
 }
-
-
-/* AUN FALTA */
-
 .padre{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4em;
 }
 .item{
     border-radius: 10px;
