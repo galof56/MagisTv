@@ -12,11 +12,11 @@
     --text-color-white:#ffffffe3;
     --dark-button:#070A52;
 }
+
 /* header  MOBILE*/
 @media only screen and (max-width: 600px) {
     /* Estilos para dispositivos móviles */
     header {
-        padding: 5em;
         display: flex;
         text-align: center;
         justify-content: space-between;
@@ -47,11 +47,14 @@
     
     .nav-links li {
         margin-right: 20px;
+        list-style: none;
+        text-decoration: none;
     }
     
     .nav-links a {
         text-decoration: none;
         font-weight: bold;
+        list-style: none;
     }
 }
 
@@ -59,10 +62,10 @@
 
 /* header */
 header {
-    padding: 5em;
+    padding: 8em;
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative; /* Añadido para posicionar el logo */
 }
 #logoinicial{
@@ -71,30 +74,40 @@ header {
     cursor: pointer;
 }
 .logoacasa{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    order: -1;
 }
-nav {
+header #logoinicial{
     display: flex;
-    flex-direction:initial;
+
+}
+
+
+.nav{
+    display: flex;
     align-items: center;
     text-align: center;
+    
+
 }
 
 .nav-links {
     list-style: none;
+    text-decoration: none;
     display: flex;
-    margin: 0; /* Añade margen cero para quitar el espacio predeterminado de la lista */
+    padding-right: 8rem;
 }
 
 .nav-links li {
     margin-right: 20px;
+    text-decoration: none;
+    list-style: none;
 }
 
-.nav-links a {
+.nav-links li a {
     text-decoration: none;
-    font-weight: bold;
+    list-style: none;
+    text-transform:uppercase;
+    color:rgb(239, 122, 5);
 }
 
 /* Media query para hacer el menú responsive */
@@ -195,7 +208,6 @@ button:hover {
     height: 100%;   
     max-width: 1000px;
     min-width: 700px;
-    height: 720px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -308,6 +320,27 @@ button.switch:active:active::after{
     }
 }
 
+.precio_azul{
+    color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:900;
+}
+.item1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #0000
+}
+.item1 i{
+    font-size: 24px;
+    margin-right: 15px;
+    color: #3498db;
+    align-items: flex-start;
+    padding-left: 18em;
+    cursor: pointer;
+}
 
 
 
@@ -345,9 +378,12 @@ button.switch:active:active::after{
     text-align: center;
     justify-content: center;
 }
+/* planes */
 
-
-
+.main_sus{
+    width: 100%;
+    display: flex;
+}
 
 
 .switch span{
@@ -400,42 +436,6 @@ a{
 }
 li{
     display: inline-block;
-}
-.ver-mas{
-    height: 2rem;
-    justify-content: center;
-    width: 25rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    display:flex;
-}
-/* .contar-productos{
-    position: absolute;
-    top:55%;
-    right: 0;
-    background-color: #000;
-    color:white #fff;
-    display: flex;
-    width: 10px;
-    height: 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-} */
-.probando{
-    position: absolute;
-    top: 70px;
-    right: 0;
-    justify-content: center;
-    padding: 10px 0;
-    gap: 1px;
-    border-radius: 20px;
-
-    background-color: var(--color-carrito);
-
-    width: 400px;
-    z-index: 1;
-    /* background-color: red; */
 }
 
 .info-cart-prducts{
@@ -517,5 +517,47 @@ li{
     cursor:pointer;
 
 }
-
+#contactos.redes{
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 50px;
+    transition: 0.5s;
+    background-color: red;
+}
+.botncute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    border-radius: 10px;
+}
+.botncute a{
+    position: relative;
+    background-color: white;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+.botncute a:hover{
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+.botncute a::before{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: #f8f8f8;    
+}
+.botncute a span{
+    position: relative;
+    z-index: 1;
+    }
 
