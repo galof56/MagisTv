@@ -467,6 +467,49 @@ button.switch:active:active::after{
     text-align: center;
     padding: 1rem;
 }
+
+
+
+
+
+
+.meses_plan_naranja{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #E3651D;
+    text-transform: uppercase;
+}
+.meses_plan_azul{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #277BC0;
+    text-transform: uppercase;
+}
+.meses_plan_rojo{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #D2001A;
+    text-transform: uppercase;
+}
+.meses_plan_verde{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #9ADE7B;
+    text-transform: uppercase;
+}
+
 .sub_plan_naranja{
     display: flex;
     justify-content: center;
@@ -657,6 +700,9 @@ li{
     cursor:pointer;
 
 }
+
+
+
 #contactos.redes{
     text-decoration: none;
     color: #ffffff;
